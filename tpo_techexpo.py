@@ -30,7 +30,7 @@ for i in range(0,100): #100 = number of rows in sheet to be looped on
             if count==0:
                 print("http://www."+p,i)
                 sheet1.write(i, 0, "http://www."+p)
-            if i%10==0:
+            if i%10==0: #saves sheet after every 10 enteries 
                 try:
                     wb.save('links_output.xls')
                 except:
